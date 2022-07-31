@@ -54,5 +54,4 @@ tidyset <- setWithActivityNames %>%
   group_by(subjectID, activityID) %>%
   summarise_each(funs(mean))
 
-write.table(tidyset, "tidy_data.txt", row.names = FALSE, 
-            quote = FALSE)
+write.table(tidyset, "tidy_data.txt", row.names = FALSE)
