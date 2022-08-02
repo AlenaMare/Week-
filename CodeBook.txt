@@ -1,0 +1,16 @@
+This is the code book for the project of Week 4 for Getting and Cleaning Data
+
+The source data are from the Human Activity Recognition Using Smartphones Data Set. 
+
+About R script
+File with R code "run_analysis2.R" performs several steps, according to assignments.
+
+About variables:
+x_train, y_train, x_test, y_test, subject_train and subject_test contain the data from the downloaded files.
+alltrain, alltest, finaldataset merge the previous datasets to further analysis.
+
+columnsToKeep extracts only the measurments on the mean and standard deviation, human Activity then filters selected.
+
+ActivityNames use descriptive activity names to name the activities in the data set. Those ActivityNames are rearanged in the next step, to put the descriptive activity as a first row.
+
+Final "tidy_data.txt" file is created with the use of tidyset. 
