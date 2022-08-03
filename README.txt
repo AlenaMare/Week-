@@ -2,12 +2,16 @@
 Getting and Cleaning Data - Week 4
 ==================================================================
 
-README contains R code, codebook, and tidy data set for the final assignment.
-The R code follows each of 5 steps in assignment. Step no. 4 (Appropriately labels the data set with descriptive variable names) is coded alongside with step 1. For further information, see run_analysis2.R
+README expains each step of the R code, which is structured based on the instruction of assignment.
 
-Files:
-CodeBook.txt describes all new variables created along the way.
+In the first step, dplyr package, used latter in the code, is dowloaded and uploaded.
 
-run_analysis2.R contains the code to perform the aassignment. 
+After that, the appropriate data file is read. The code says to read url, which is in zip format and therefore have to be unziped. After downloading the data, the next steps focus on instucctions of assignment.
 
-tidyData.txt is the output of the final step
+#1. First, all the data files are read as table, followed by defining columns in each set (in this step, instruction no. 4 is basically done). After those steps, the training and the test sets are merged into a new data set (finaldataset).
+
+#2. Following code extracts only the measurements on the mean and standard deviation for each measurement, while also keeping information about the subject and activity. The new data set is called humanActivity 
+
+#3. In this step, the code transforms number standing for activity into descriptive activity names to name the activities in the data set. The descriptive activity names are also placed as a first column in the ew data set called ActivityNames.
+
+#5. In the last step, independent tidy data set with the average of each variable for each activity and each subject is created. This data set (tidy_data.txt) is enclosed in the repo.
